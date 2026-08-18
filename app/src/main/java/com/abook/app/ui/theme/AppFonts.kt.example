@@ -1,0 +1,27 @@
+// ============================================================================
+// هذا الملف مثال جاهز — وليس جزءًا من البناء حاليًا (لاحظ الامتداد .kt.example)
+//
+// خطوات التفعيل:
+// 1) نزّل ملفات: cairo_regular.ttf, cairo_bold.ttf, tajawal_regular.ttf, tajawal_bold.ttf
+//    من https://fonts.google.com/specimen/Cairo و https://fonts.google.com/specimen/Tajawal
+// 2) ضعها داخل: app/src/main/res/font/
+// 3) أعد تسمية هذا الملف من AppFonts.kt.example إلى AppFonts.kt
+// 4) في ملف Type.kt استبدل TextStyle الافتراضي بإضافة fontFamily = CairoFontFamily
+// ============================================================================
+
+package com.abook.app.ui.theme
+
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
+import com.abook.app.R
+
+val CairoFontFamily = FontFamily(
+    Font(R.font.cairo_regular, FontWeight.Normal),
+    Font(R.font.cairo_bold, FontWeight.Bold)
+)
+
+val TajawalFontFamily = FontFamily(
+    Font(R.font.tajawal_regular, FontWeight.Normal),
+    Font(R.font.tajawal_bold, FontWeight.Bold)
+)
