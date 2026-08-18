@@ -11,6 +11,10 @@ import androidx.compose.material.icons.filled.DarkMode
 import androidx.compose.material.icons.filled.FormatSize
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.abook.app.data.local.AnnotationEntity
@@ -29,7 +33,7 @@ fun ReaderDrawerContent(
     onOpenFullSettings: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-    var tabIndex by androidx.compose.runtime.remember { androidx.compose.runtime.mutableStateOf(0) }
+    var tabIndex by remember { mutableStateOf(0) }
 
     ModalDrawerSheet(modifier = modifier) {
         // إعدادات سريعة أعلى القائمة
