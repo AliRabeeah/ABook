@@ -1,6 +1,7 @@
 package com.abook.app.ui.reader
 
 import androidx.compose.animation.core.tween
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.gestures.Orientation
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.pager.HorizontalPager
@@ -16,6 +17,7 @@ import kotlin.math.absoluteValue
  * ملاحظة: تأثير CURL (محاكاة انحناء الورقة الحقيقي) مخطط لمرحلة لاحقة
  * لأنه يتطلب رسم Canvas مخصص بمعادلات هندسية؛ حاليًا يُعامل كـ SLIDE.
  */
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun ReaderPager(
     pagerState: PagerState,
