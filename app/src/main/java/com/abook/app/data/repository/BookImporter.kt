@@ -9,8 +9,6 @@ import com.abook.app.data.local.BookFormat
 import org.apache.commons.compress.archivers.zip.ZipFile
 import java.io.File
 import java.io.FileOutputStream
-import java.io.SeekableByteChannel
-import java.nio.channels.Channels
 import java.util.UUID
 
 data class ExtractedBookInfo(

@@ -76,7 +76,7 @@ fun LibraryScreen(
                         Icon(Icons.Filled.CloudSync, contentDescription = "مزامنة")
                     }
                     IconButton(onClick = viewModel::onViewModeToggle) {
-                        Icon(Icons.AutoMirrored.Filled.List, contentDescription = "تبديل العرض")
+                        Icon(Icons.Filled.List, contentDescription = "تبديل العرض")
                     }
                     Box {
                         IconButton(onClick = { sortMenuExpanded = true }) {
